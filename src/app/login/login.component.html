@@ -1,0 +1,35 @@
+<br>
+<br>
+<div class="card" style="width: 15rem;left: 80px;background-color: #457B9D;">
+    <div class="card-body">
+      <h5 class="card-title text-center">تسجيل الدخول</h5>
+      <br>
+    <div class="mb-3">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" [(ngModel)]="email" class="form-control"style="background-color: #F1FAEE;" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+    </div>
+        <div class="mb-3">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon12">***</span>
+                <input type="text" [(ngModel)]="pas" class="form-control"style="background-color: #F1FAEE;" placeholder="password" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class="row m-3 justify-content-center text-center">
+            <div class="col">
+                <button title="add" (click)="Login()"  type="button" class="btn btn-outline-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row m-3 justify-content-center text-center">
+            <div class="col">
+                <p><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"> نسيت كلمه المرور؟</a></p>
+                
+            </div>
+        </div>
+    </div>

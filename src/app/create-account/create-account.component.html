@@ -1,0 +1,53 @@
+<br>
+<br>
+<div class="card" style="width: 15rem;left: 80px;background-color: #457B9D;">
+    <div class="card-body">
+      <h5 class="card-title text-center">انشاء حساب</h5>
+      <br>
+    <div class="mb-3">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" [(ngModel)]="email" class="form-control"style="background-color: #F1FAEE;" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="input-group mb-3" >
+            <span class="input-group-text" id="basic-addon16">👨</span>
+            <input type="text" [(ngModel)]="name" class="form-control" style="background-color: #F1FAEE;" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+    </div>
+        <div class="mb-3">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon12">***</span>
+                <input type="text" [(ngModel)]="pas" class="form-control"style="background-color: #F1FAEE;" placeholder="password" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </div>
+            <div class="mb-3">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon125">***</span>
+                    <input type="text" [(ngModel)]="pasC" class="form-control" style="background-color: #F1FAEE;" placeholder="confirm password" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon125">G</span>
+                    <input type="text" [(ngModel)]="groupName" class="form-control" style="background-color: #F1FAEE;" placeholder="group name" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        <div class="row m-3 justify-content-center text-center">
+            <div class="col">
+                <button title="add" (click)="AddAccount()" type="button" class="btn btn-outline-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row m-3 justify-content-center text-center">
+            <div class="col">
+                <p><a (click)="goToAddGroup()" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">انشاء جلسه</a></p>
+                <p><a (click)="goToLogin()" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">لديك حساب؟</a></p>
+            </div>
+        </div>
+    </div>
